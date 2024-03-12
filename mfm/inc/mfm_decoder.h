@@ -273,7 +273,8 @@ typedef struct {
       CONTROLLER_STRIDE_440,
       CONTROLLER_SAGA_FOX,
       CONTROLLER_ND100_3041,
-      CONTROLLER_PERQ_T2
+      CONTROLLER_PERQ_T2,
+      CONTROLLER_SMS_FWD0106
    } controller;
    // The sector numbering used. This will vary from the physical order if
    // interleave is used. Only handles all sectors the same.
@@ -3522,6 +3523,15 @@ DEF_EXTERN CONTROLLER mfm_controller_info[]
          1, 1, trk_perq_t2, 512, 16, 0, 5209,
          16, 0,
          {0x0,0x8005,16,0},{0x0,0x8005,16,0}, CONT_MODEL,
+         0, 0, 0
+      },
+      {"SMS_FWD0106", 256, ?, ?,
+         4, ARRAYSIZE(mfm_all_poly), 4, ARRAYSIZE(mfm_all_poly),
+         0, ARRAYSIZE(mfm_all_init), CINFO_CHS,
+         5, 2, 0, 0, CHECK_CRC, CHECK_CRC,
+         0, 1, trk_3B1, 256, 32, 0, 5209,
+         0, 0,
+         { 0, 0, 16, 0 },{ 0, 0, 16, 0 }, CONT_MODEL,
          0, 0, 0
       },
       {NULL, 0, 0, 0,
