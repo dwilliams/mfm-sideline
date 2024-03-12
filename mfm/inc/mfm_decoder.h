@@ -3525,13 +3525,13 @@ DEF_EXTERN CONTROLLER mfm_controller_info[]
          {0x0,0x8005,16,0},{0x0,0x8005,16,0}, CONT_MODEL,
          0, 0, 0
       },
-      {"SMS_FWD0106", 256, 10000000, 0,
+      {"SMS_FWD0106", 512, 10000000, 0,
          4, ARRAYSIZE(mfm_all_poly), 4, ARRAYSIZE(mfm_all_poly),
          0, ARRAYSIZE(mfm_all_init), CINFO_CHS,
          5, 2, 0, 0, CHECK_CRC, CHECK_CRC,
-         0, 1, trk_3B1, 256, 32, 0, 5209,
+         0, 1, trk_3B1, 512, 17, 0, 5209,
          0, 0,
-         { 0xffff, 0x1021, 16, 0 },{ 0, 0, 24, 0 }, CONT_MODEL,
+         { 0, 0, 16, 0 },{ 0, 0, 24, 0 }, CONT_MODEL,
          0, 0, 0
       },
       {NULL, 0, 0, 0,
