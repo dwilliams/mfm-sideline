@@ -3531,7 +3531,7 @@ DEF_EXTERN CONTROLLER mfm_controller_info[]
          5, 2, 0, 0, CHECK_CRC, CHECK_CRC,
          0, 1, trk_3B1, 256, 32, 0, 5209,
          0, 0,
-         { 0, 0, 16, 0 },{ 0, 0, 16, 0 }, CONT_MODEL,
+         { 0, 0, 16, 0 },{ 0, 0, 24, 0 }, CONT_MODEL,
          0, 0, 0
       },
       {NULL, 0, 0, 0,
